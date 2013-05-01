@@ -1,5 +1,5 @@
 <?php
-namespace Solomo\Bundle\MandrillBundle\DependencyInjection;
+namespace Ql4b\Bundle\MandrillBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -8,7 +8,7 @@ use Symfony\Component\Config\FileLocator;
 
 
 class Ql4bMandrillExtension extends Extension {
-	
+    
 	public function load(array $configs, ContainerBuilder $container){
 		
 		$loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
