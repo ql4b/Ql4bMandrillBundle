@@ -1,6 +1,8 @@
 <?php
 namespace Ql4b\Bundle\MandrillBundle\Service\Api;
 	
+use Symfony\Bundle\FrameworkBundle\HttpCache\HttpCache;
+
 use Zend\Http\Client as HttpClient;
 use Zend\Http\Request;
 
@@ -17,7 +19,7 @@ class Client {
 	private $key;
 	
 	/**
-	 * @var string=
+	 * @var string
 	 */
 	private $format = 'json';
 	
@@ -109,6 +111,9 @@ class Client {
 	
 	}
 
+	/**
+	 * @return HttpClient 
+	 */
 	private static function getHttpClient(){
 		
 		if (!isset(self::$httpClient)){

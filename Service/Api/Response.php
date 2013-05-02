@@ -15,7 +15,9 @@ class Response {
 	 */
 	private $data;
 	
-	
+	/**
+	 * @param HttpResponse $response
+	 */
 	public function __construct(HttpResponse $response){
 		
 		if ($response->getStatusCode() !== HttpResponse::STATUS_CODE_200)
