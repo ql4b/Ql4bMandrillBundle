@@ -21,4 +21,9 @@ class Ql4bMandrillExtension extends Extension {
 		$container->setParameter('mandrill.client.key', $config['key']);
 		
 	}
+
+    public function getAlias()
+    {
+        return 'mandrill';
+    }
 }
