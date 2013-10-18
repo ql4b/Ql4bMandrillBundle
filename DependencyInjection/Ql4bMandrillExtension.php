@@ -24,6 +24,6 @@ class Ql4bMandrillExtension extends Extension {
 
     public function getAlias()
     {
-        return 'mandrill';
+        return 'ql4b_mandrill';
     }
 }
